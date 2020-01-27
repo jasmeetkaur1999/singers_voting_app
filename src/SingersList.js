@@ -30,7 +30,23 @@ class Component extends React.Component {
     });
   };
   render() {
-    
+    //sort Singers with highest votes
+
+    let sortSingers = this.state.Singers.sort((a, b) => {
+      return b.votes - a.votes;
+    });
+    const Singer = sortSingers.map(singer => (
+      <Singers
+        key={singer.id}
+        id={singer.id}
+        name={singer.name}
+        votes={singer.votes}
+        submitten_due={singer.submitten_due}
+        imageUrl={singer.imageUrl}
+        uploader={singer.Submitted_by}
+        voteSinger={this.voteHandler}
+      />
+    ));
     return <div className="ui divided unstackable items main">{Singer}</div>;
   }
 }
