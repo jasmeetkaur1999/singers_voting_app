@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/jasmeetkaur1999/singers_voting_app.git).
+
+This is a voting app. This app will put the singer with highest votes at top of the  list.
+In this project I used prebuilt tags of semantic ui library .
+Everytime user click on button Singer's vote will increse by one.
+if user click on singer's name it opens new page.
 
 ## Available Scripts
 
@@ -66,4 +71,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# singers_voting_app
